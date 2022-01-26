@@ -3,15 +3,11 @@ import Weather from "./Weather";
 
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World!</h1>
-        <Weather city="Tokyo" />
-      </header>
+      <h1>Weather Search Engine</h1>
+      <Weather />
     </div>
   );
 }
-
-export default App;
