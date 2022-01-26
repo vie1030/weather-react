@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather(props) {
   function handleResponse(response) {
@@ -11,5 +12,14 @@ export default function Weather(props) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(handleResponse);
-  return <h2>hello</h2>;
+  return (
+    <span className="weather-icon">
+      <ReactAnimatedWeather
+        icon="SNOW"
+        color="white"
+        size={100}
+        animate={true}
+      />
+    </span>
+  );
 }
