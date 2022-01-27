@@ -8,8 +8,8 @@ export default function Temperature() {
     <div className="Temperature ">
       <span className="sunny">
         <ReactAnimatedWeather
-          icon="SNOW"
-          color="blue"
+          icon="CLEAR_DAY"
+          color="#F8E167"
           size={75}
           animate="true"
         />
@@ -17,7 +17,7 @@ export default function Temperature() {
       <span className="float-left"></span>
       <strong id="temperature">3</strong>
       <span className="units">
-        <a href="/"> °C </a>|<a href="/"> °F </a>
+        °C |<a href="/"> °F </a>
       </span>
     </div>
   );
